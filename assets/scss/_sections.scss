@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 74px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 82px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 122px;
+    height: 66px;
+    background: url(../img/section-title-bg.png) no-repeat;
+    z-index: -1;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@import './sections/_hero.scss';
+@import './sections/_about.scss';
+@import './sections/_services.scss';
+@import './sections/_stats.scss';
+@import './sections/_call-to-action.scss';
+@import './sections/_portfolio.scss';
+@import './sections/_testimonials.scss';
+@import './sections/_team.scss';
+@import './sections/_pricing.scss';
+@import './sections/_faq.scss';
+@import './sections/_contact.scss';
+@import './sections/_portfolio-details.scss';
+@import './sections/_service-details.scss';
+@import './sections/_starter-section.scss';
